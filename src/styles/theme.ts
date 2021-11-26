@@ -1,9 +1,15 @@
 const theme = {
-  colors: {
-    background: '#121214',
-    text: '#e1e1e5',
-    primary: '#8257e6'
-  }
+  background: '#1D1B19',
+  backgroundLight: '#510A32',
+  primary: '#C72C41',
+  secondary: '#d45d5d',
+  gradient: 'linear-gradient(225deg, #510A32 0%, #d45d5d 100%);',
+  text: '#C4C4C4',
+  textHighlight: '#444B5B',
+  textLight: '#FFFFFF',
+  border: '#313958',
+  inputBackground: '#1E253E',
+  error: '#d45d5d'
 };
 
 export default theme;
