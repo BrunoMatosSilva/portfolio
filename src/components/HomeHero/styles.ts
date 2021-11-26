@@ -94,6 +94,18 @@ export const CodeItem = styled.pre`
     align-self: flex-start;
     transition: 1s;
 
+    @media(max-width: 1450px) {
+        width: 18rem;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    @media(max-width: 1000px) {
+        width: 100%;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+    }
+
     &:hover {
         filter: brightness(1.2);
     }
