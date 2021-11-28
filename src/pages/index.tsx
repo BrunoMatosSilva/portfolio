@@ -1,3 +1,4 @@
+import Experience from "../components/Experience";
 import Header from "../components/Header";
 import HomeHero from "../components/HomeHero";
 import { HomeContainer } from "../styles/HomeStyles";
@@ -10,7 +11,7 @@ export default function Home() {
       <main className="container">
 
         <HomeHero />
-
+        <Experience />
       </main>
     </HomeContainer>
   );
