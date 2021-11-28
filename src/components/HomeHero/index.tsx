@@ -1,5 +1,5 @@
 import { Container, TextContainer, InfosContainer, CodeItem } from './styles';
-import perfil from '../../assets/devperfil.png';
+import perfil from '../../assets/Programmer.gif';
 
 function HomeHero() {
   return (
