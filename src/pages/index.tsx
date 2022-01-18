@@ -1,7 +1,8 @@
-import Experience from "../components/Experience";
-import Header from "../components/Header";
-import HomeHero from "../components/HomeHero";
-import { HomeContainer } from "../styles/HomeStyles";
+import Conhecimento from '../components/Conhecimento';
+import Header from '../components/Header';
+import HomeHero from '../components/HomeHero';
+import Projetos from '../components/Projetos';
+import { HomeContainer } from '../styles/HomeStyles';
 
 export default function Home() {
   return (
@@ -9,9 +10,9 @@ export default function Home() {
       <Header />
 
       <main className="container">
-
         <HomeHero />
-        <Experience />
+        <Conhecimento />
+        <Projetos />
       </main>
     </HomeContainer>
   );

@@ -32,7 +32,7 @@ function HomeHero() {
               Cargo
             </span> {'\u007B'}
             <div>
-              Função: <span className="blue">Dev FullStack,</span>
+              Função: <span className="blue">Dev Front-End,</span>
             </div>
             <div>
               Empresa: <span className="blue">BMS Dev</span>
