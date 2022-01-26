@@ -11,9 +11,9 @@ function SectionTitle({ title, description }: SectionTitleProps) {
   return (
     <Container>
       <h1>
-        ${'\u007B'}
+        ${'\u007B'}&nbsp;
         {title}
-        {'\u007D'}
+        &nbsp;{'\u007D'}
       </h1>
       {description && <h2>{description}</h2>}
     </Container>
