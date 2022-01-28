@@ -1,6 +1,6 @@
 const theme = {
   background: '#1D1B19',
-  backgroundLight: '#510A32',
+  backgroundLight: '#C72C41',
   primary: '#C72C41',
   secondary: '#d45d5d',
   gradient: 'linear-gradient(225deg, #1D1B19 0%, #3F3D56 100%);',

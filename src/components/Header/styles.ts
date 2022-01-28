@@ -1,8 +1,8 @@
-import { lighten } from 'polished';
+import { darken, lighten } from 'polished';
 import styled from 'styled-components';
 
 interface NavLinkProps {
-    isActive: boolean;
+  isActive: boolean;
 }
 
 export const Container = styled.header`
@@ -11,7 +11,7 @@ export const Container = styled.header`
  align-items: center;
  justify-content: center;
  height: 4rem;
- border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
+ border-bottom: 1px solid ${({ theme }) => darken(0.3, theme.backgroundLight)};
 
  ul{
     display: flex;

@@ -1,4 +1,5 @@
 import Conhecimento from '../components/Conhecimento';
+import Footer from '../components/Footer';
 import FormContato from '../components/FormContato';
 import Header from '../components/Header';
 import HomeHero from '../components/HomeHero';
@@ -18,6 +19,7 @@ export default function Home() {
         <Tecnologias />
         <FormContato />
       </main>
+      <Footer />
     </HomeContainer>
   );
 }
