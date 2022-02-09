@@ -183,21 +183,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
           text-align: left;
         }
       }
-
-      > button {
-        position: absolute;
-        bottom: 1rem;
-        right: 1rem;
-        margin: 0;
-      }
-
-      &:hover {
-        > section > div.text {
-          left: 1rem;
-        }
-      }
     }
-  }
 
   @media (max-width: 700px) {
     height: 17rem;

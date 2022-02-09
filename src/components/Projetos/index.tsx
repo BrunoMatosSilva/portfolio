@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
+import ButtonNav from '../Button';
 import SectionTitle from '../SectionTitle';
 import ProjetoItem from './ProjetoItem';
 
@@ -30,11 +31,9 @@ function Projetos() {
           slug="teste"
         />
       </section>
-      <button type="button">
-        <Link href="/projetos">
-          <a>Ver todos os projetos</a>
-        </Link>
-      </button>
+      <Link href="/projetos">
+        <ButtonNav link="projetos" description="Ver Todos os Projetos" />
+      </Link>
     </Container>
   );
 }

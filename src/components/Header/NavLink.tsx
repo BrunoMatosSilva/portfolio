@@ -3,20 +3,28 @@ import { useRouter } from 'next/router';
 import { NavLinkContainer } from './styles'
 
 interface Props {
-    title: string;
-    path: string;
+  title: string;
+  path: string;
+  includes?: boolean;
 }
 
-export default function NavLink({ title, path }: Props) {
-    const router = useRouter();
+export default function NavLink({ title, path, includes = false }: Props) {
+  const router = useRouter();
 
-    const isActive = router.pathname === path;
+  function verifyIfIsActive() {
+    if (includes) {
+      return router.pathname.includes(path);
+    }
+    return path === router.pathname;
+  }
 
-    return (
-        <NavLinkContainer isActive={isActive}>
-            <Link href={path} >
-                <a>{title}</a>
-            </Link>
-        </NavLinkContainer>
-    );
+  const isActive = verifyIfIsActive();
+
+  return (
+    <NavLinkContainer isActive={isActive}>
+      <Link href={path} >
+        <a>{title}</a>
+      </Link>
+    </NavLinkContainer>
+  );
 }
