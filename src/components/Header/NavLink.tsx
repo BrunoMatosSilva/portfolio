@@ -22,7 +22,7 @@ export default function NavLink({ title, path, includes = false }: Props) {
 
   return (
     <NavLinkContainer isActive={isActive}>
-      <Link href={path} >
+      <Link href={path}>
         <a>{title}</a>
       </Link>
     </NavLinkContainer>

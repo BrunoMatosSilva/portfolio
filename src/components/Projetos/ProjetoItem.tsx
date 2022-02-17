@@ -12,7 +12,7 @@ interface ProjetoProps {
 
 export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
   return (
-    <ProjetoContainer imgUrl={img}>
+    <ProjetoContainer imgUrl={img} data-aos="fade-up">
       <section>
         <div className="overlay" />
         <div className="text">

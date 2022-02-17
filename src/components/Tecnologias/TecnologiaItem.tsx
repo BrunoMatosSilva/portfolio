@@ -8,7 +8,7 @@ interface TecnologiaProps {
 
 export default function TecnologiaItem({ title, icon }: TecnologiaProps) {
   return (
-    <TecnologiaContainer>
+    <TecnologiaContainer data-aos="fade-up">
       <p>{title}</p>
       {icon}
     </TecnologiaContainer>

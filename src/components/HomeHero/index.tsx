@@ -3,7 +3,7 @@ import perfil from '../../assets/Programmer.gif';
 
 function HomeHero() {
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <img src={perfil} alt="Dev Foto" />
       <div>
         <TextContainer>
@@ -11,7 +11,7 @@ function HomeHero() {
           <h2> Me chamo Bruno </h2>
         </TextContainer>
         <InfosContainer>
-          <CodeItem>
+          <CodeItem data-aos="zoom-in">
             <span className="comment">
               //Minha apresentação
             </span>
@@ -27,7 +27,7 @@ function HomeHero() {
             {'\u007D'}
           </CodeItem>
 
-          <CodeItem>
+          <CodeItem data-aos="zoom-in">
             <span className="purple">
               Cargo
             </span> {'\u007B'}

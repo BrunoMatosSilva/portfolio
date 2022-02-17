@@ -27,7 +27,7 @@ export const Container = styled.section`
 export const ItemContainer = styled.div`
     > div {
         background: ${({ theme }) => theme.gradient};
-        padding: 1rem;
+        padding: 1.5rem;
         padding-top: 2.5rem;
         height: 20rem;
         display: flex;
@@ -111,6 +111,6 @@ export const ItemContainer = styled.div`
             p {
                 font-size: 1rem;
             }
-        }      
+        }
     }
 `;
