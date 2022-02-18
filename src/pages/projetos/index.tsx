@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next';
+import Head from 'next/head';
 import Prismic from '@prismicio/client';
 import { ProjetosContainer } from '../../styles/ProjetosStyles';
 import Header from '../../components/Header';
@@ -13,6 +14,22 @@ interface ProjetoProps {
 export default function Projetos({ projetos }: ProjetoProps) {
   return (
     <ProjetosContainer>
+      <Head>
+        <title>BMSFrontEnd | Projetos</title>
+        <meta
+          name="description"
+          content="Aqui eu mostro meus projetos desenvolvidos usando ReactJS!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Aqui eu mostro meus projetos desenvolvidos usando ReactJS!"
+        />
+      </Head>
+
       <Header />
       <main className="container">
         {projetos.map(projeto => (

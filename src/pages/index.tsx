@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Prismic from '@prismicio/client';
 import Aos from 'aos';
 import { GetStaticProps } from 'next';
@@ -24,6 +25,22 @@ export default function Home({ projetos }: HomeProps) {
   }, []);
   return (
     <HomeContainer>
+      <Head>
+        <title>BMSFrontEnd | Home</title>
+        <meta
+          name="description"
+          content="Sou um desenvolvedor Front-end foca na utilização do ReactJS e aqui apresento alguns projetos desenvolvidos por mim durante essa minha jornada de aprendizado continuo!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Sou um desenvolvedor Front-end foca na utilização do ReactJS e aqui apresento alguns projetos desenvolvidos por mim durante essa minha jornada de aprendizado continuo!"
+        />
+      </Head>
+
       <Header />
 
       <main className="container">
