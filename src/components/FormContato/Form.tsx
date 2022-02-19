@@ -1,6 +1,6 @@
 import toast from 'react-hot-toast';
-import { FormEvent, useState } from 'react';
-import { sendContactMail } from '../../services/sendEmail';
+import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 import { FormContainer, Input, TextArea } from './styles';
 import theme from '../../styles/theme';
 
@@ -10,7 +10,7 @@ export default function Form() {
   const [mensagem, setMensagem] = useState('');
 
   const [loading, setLoading] = useState(false);
-  async function handleSubmit(event: FormEvent) {
+  async function handleSubmit(event) {
     event.preventDefault();
 
     if (loading) return;
@@ -27,7 +27,12 @@ export default function Form() {
 
     try {
       setLoading(true);
-      await sendContactMail(nome, email, mensagem);
+      emailjs.sendForm(
+        'gmailMessage',
+        'template_6np4c2i',
+        event.target,
+        'user_G0Vg9n3WLueatvRxreKcC'
+      );
       setNome('');
       setEmail('');
       setMensagem('');
@@ -55,16 +60,19 @@ export default function Form() {
         placeholder="Nome"
         value={nome}
         onChange={({ target }) => setNome(target.value)}
+        name="nome"
       />
       <Input
         placeholder="Email"
         value={email}
         onChange={({ target }) => setEmail(target.value)}
         type="email"
+        name="email"
       />
       <TextArea
         placeholder="Mensagem"
         value={mensagem}
+        name="mensagem"
         onChange={({ target }) => setMensagem(target.value)}
       />
       <button type="submit" disabled={loading}>
