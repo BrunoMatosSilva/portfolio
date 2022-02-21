@@ -89,6 +89,6 @@ export const getStaticProps: GetStaticProps = async context => {
     props: {
       projeto
     },
-    revalidate: 18000
+    revalidate: 3600
   };
 };
