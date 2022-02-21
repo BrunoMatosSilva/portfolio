@@ -44,6 +44,10 @@ export const ProjetoContainer = styled.div`
       p {
         font-size: 1rem;
       }
+
+      h2 {
+        font-size: 1.5rem;
+      }
     }
   }
 `;
