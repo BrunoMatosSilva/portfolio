@@ -1,14 +1,10 @@
 <h1 align="center">BMS Front-End - Portfolio</h1>
 <p align="center">Enfim tirei um tempo e com a ajuda do Gabriel Borges e seus vídeos no Youtube eu finalizei um dos meus primeiros objetivos após iniciar nessa caminhada de evolução sem fim. E agora eu tenho o meu primeiro portfolio. Agradeço pela visita ao site e toda sugestão e critica construtiva que possam ter.</p>
 
-<div align="center"><img src="https://img.shields.io/github/issues/BrunoMatosSilva/portfolio" />
-<img src="https://img.shields.io/github/forks/BrunoMatosSilva/portfolio" />
-<img src="https://img.shields.io/github/stars/BrunoMatosSilva/portfolio" /></div>
-
 ## Home Page
 
 <h1 align="center">
-<img src="https://media-exp1.licdn.com/dms/image/sync/C4E27AQFRW0HQVIb_pQ/articleshare-shrink_800/0/1646436299330?e=1646582400&v=beta&t=TpPkJR6ZL5Atf-uGC3Dsj_VeoqG32emQ8F1EMsWctk0" />
+<img src="https://i.ibb.co/YkWXQfZ/homeportifolio.png](https://www.imagemhost.com.br/images/2022/06/09/homeportifolio.png" />
 </h1>
 
 <h1 align="center">Tecnologias Usadas</h1>
